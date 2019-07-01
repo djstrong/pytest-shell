@@ -1,0 +1,25 @@
+syntax: glob
+
+__pycache__
+*.py[cod]
+develop-eggs/
+*.egg-info/
+
+pip-log.txt
+pip-delete-this-directory.txt
+
+.tox/
+.coverage
+.coverage.*
+.cache
+.hypothesis/
+
+.python-version
+
+.idea
+.venv
+.pytest_cache
+
+build
+dist
+
