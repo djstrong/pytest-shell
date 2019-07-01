@@ -115,7 +115,7 @@ class BashDialect(Dialect):
         # TODO: join with newlines prior to sending?
         out = []
         for l in lines:
-            out.append(self.connection.send(l))
+            out.append(self.connection.send(l, timeout=1000.0))
         return '\n'.join(out)
 
     def run_script(self, path, args=None):
